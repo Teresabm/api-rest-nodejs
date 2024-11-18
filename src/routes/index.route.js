@@ -1,6 +1,8 @@
 import { Router } from "express";
-const router = Router()
 import { getPong } from "../controllers/index.controller.js";
+
+const router = Router()
+
 
 router.get('/ping', getPong)
 
