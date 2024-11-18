@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json())
 
 /* routes render */
-app.use(indexRoute)
+app.use('/ping',indexRoute)
 app.use('/api',productsRoutes)
 
 /* -- not found route */
